@@ -25,17 +25,22 @@ def directors_totals(nds)
     name << nds[count1][:name]
     count1 += 1
   end
-  # puts name
-  total_money= []
   count2 = 0
-  count3 = 0
-  while nds[count2].length > count2
-    while nds[count2][:movies].length > count3
-      total += nds[count2][:movies][count3][:worldwide_gross]
-      count3 += 1
-    end
+  while nds.length > count2
+    result [name[count2]] => gross_for_director(nds[count2])
     count2 += 1
-    total_money << total
+  end
+  # puts name
+  # total_money= []
+  # count2 = 0
+  # count3 = 0
+  # while nds[count2].length > count2
+  #   while nds[count2][:movies].length > count3
+  #     total += nds[count2][:movies][count3][:worldwide_gross]
+  #     count3 += 1
+  #   end
+  #   count2 += 1
+  #   total_money << total
   end
   count4 = 0
   while name.length > count4
