@@ -41,11 +41,6 @@ def directors_totals(nds)
   #   end
   #   count2 += 1
   #   total_money << total
-  end
-  count4 = 0
-  while name.length > count4
-    result[name[count4]] = total[count4]
-  end
   return result
   nil
 end
